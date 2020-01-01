@@ -10,7 +10,12 @@ export default function SignIn() {
     <Container>
       <Image source={logo} />
       <Form>
-        <FormInput secureTextEntry placeholder="Informe seu ID de cadastro" />
+        <FormInput
+          placeholder="Informe seu ID de cadastro"
+          returnKeyType="send"
+          autoCorrect={false}
+          autoCapitalize="none"
+        />
         <SubmitButton onPress={() => {}}>Entrar no sistema</SubmitButton>
       </Form>
     </Container>
